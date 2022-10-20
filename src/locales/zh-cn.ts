@@ -55,6 +55,8 @@ export default {
     editArticle: '编辑文章',
     articleList: '文章列表',
     errorPages: '错误页面',
+    damonPages: '自己开发的页面',
+    damonMyTest: '测试页面-Dashboard',
     page401: '401',
     page404: '404',
     errorLog: '错误日志',

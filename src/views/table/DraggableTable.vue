@@ -143,6 +143,7 @@ export default defineComponent({
         dataMap.total = data?.data.total ?? 0
         dataMap.oldList = dataMap.list.map((v) => v.id)
         dataMap.newList = this.oldList.slice()
+        console.log('this.newList', this.newList, 'this.oldList', this.oldList)
         nextTick(() => {
           this.setSort()
         })

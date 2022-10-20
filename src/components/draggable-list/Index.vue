@@ -105,9 +105,12 @@ export default defineComponent({
       return props.list2.every((k: any) => v.id !== k.id)
     }
     const deleteEle = (ele: ArticleModel) => {
+      console.log('props.list1', props.list1, 'ele', ele)
       for (const item of props.list1) {
+        console.log('')
         if (item.id === ele.id) {
           const index = props.list1.indexOf(item)
+
           // eslint-disable-next-line vue/no-mutating-props
           props.list1.splice(index, 1)
           break

@@ -102,6 +102,8 @@ export default defineComponent({
         .querySelector('.sticky')
         ?.getBoundingClientRect().top
 
+      console.log('offsetTop: ', offsetTop, '\n stickyTop: ', props.stickyTop)
+
       if (offsetTop) {
         if (offsetTop < props.stickyTop) {
           sticky()
